@@ -46,4 +46,6 @@ RUN pip3 install seaborn
 RUN apt-get update && \
       apt-get -y install sudo
 
+RUN apt-get install ffmpeg libsm6 libxext6  -y
+
 CMD tail -f /dev/null

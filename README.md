@@ -6,6 +6,9 @@
 > My spec was >>> Notebook Lenovo Legion 5 15ACH6H-82JU007LTA
 <br>
 
+### Make sure that CUDA version on PC is grater than 11.7
+### local run with 11.8
+
 - Detail
     - AMD Ryzen 5 5600H (3.30 GHz up to 4.20 GHz, 16 MB L3 Cache)
     - NVIDIA GeForce RTX 3060 (6GB GDDR6)
