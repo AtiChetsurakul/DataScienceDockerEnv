@@ -14,6 +14,10 @@ ENV TZ="Asia/Bangkok"
 # like CD command in terminal. it will create directory if path is not existed
 WORKDIR /root/projects
 RUN apt update && apt upgrade -y
+
+RUN apt-get update && \
+      apt-get -y install sudo
+
 # Set timezone
 RUN apt install -y tzdata
 RUN ln -snf /usr/share/zoneinfo/$CONTAINER_TIMEZONE /etc/localtime && echo $CONTAINER_TIMEZONE > /etc/timezone

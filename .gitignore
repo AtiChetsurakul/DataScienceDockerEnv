@@ -1,1 +1,4 @@
 *.hide
+data_set/*
+*.csv
+*.jpg
