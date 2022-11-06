@@ -15,8 +15,8 @@ ENV TZ="Asia/Bangkok"
 WORKDIR /root/projects
 RUN apt update && apt upgrade -y
 
-RUN apt-get update && \
-      apt-get -y install sudo
+# RUN apt-get update && \
+#       apt-get -y install sudo
 
 # Set timezone
 RUN apt install -y tzdata
@@ -42,5 +42,8 @@ RUN pip3 install --pre torch torchvision torchaudio --extra-index-url https://do
 RUN pip3 install opencv-python
 RUN pip3 install seaborn
 
+
+RUN apt-get update && \
+      apt-get -y install sudo
 
 CMD tail -f /dev/null
