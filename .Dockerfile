@@ -47,5 +47,10 @@ RUN apt-get update && \
       apt-get -y install sudo
 
 RUN apt-get install ffmpeg libsm6 libxext6  -y
+RUN sudo apt update
+RUN sudo apt upgrade
+RUN sudo apt -y install zip
+RUN sudo apt -y install unzip
+RUN sudo apt -y install vim
 
 CMD tail -f /dev/null
